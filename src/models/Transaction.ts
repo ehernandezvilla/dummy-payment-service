@@ -1,6 +1,5 @@
 // src/models/Transaction.ts
-
-// Define Transaction y TransactionStatus para representar estados de pago
+import logger from '../config/logger';
 
 export type TransactionStatus = 
   | 'payment_pending'
@@ -16,30 +15,54 @@ export interface Transaction {
   userId: string;
   status: TransactionStatus;
   createdAt: Date;
+  updatedAt: Date;
+  metadata?: Record<string, any>;
 }
 
-
+// En una aplicación real, esto sería una base de datos
 const transactions: Record<string, Transaction> = {};
 
-// Funciones para crear, actualizar y obtener transacciones
-
-export const createTransaction = (id: string, amount: number, userId: string): Transaction => {
+export const createTransaction = (id: string, amount: number, userId: string, metadata?: Record<string, any>): Transaction => {
+  const now = new Date();
   const transaction: Transaction = {
     id,
     amount,
     userId,
-    status: 'payment_processing',
-    createdAt: new Date(),
+    status: 'payment_pending',
+    createdAt: now,
+    updatedAt: now,
+    metadata
   };
+  
   transactions[id] = transaction;
+  logger.info('Transaction created:', { transactionId: id, userId, amount });
+  
   return transaction;
 };
 
-export const updateTransactionStatus = (id: string, status: TransactionStatus): Transaction | null => {
+export const updateTransactionStatus = async (id: string, status: TransactionStatus): Promise<Transaction | null> => {
   const transaction = transactions[id];
-  if (!transaction) return null;
+  if (!transaction) {
+    logger.warn('Transaction not found:', { transactionId: id });
+    return null;
+  }
+  
   transaction.status = status;
+  transaction.updatedAt = new Date();
+  
+  logger.info('Transaction status updated:', { 
+    transactionId: id, 
+    oldStatus: transaction.status, 
+    newStatus: status 
+  });
+  
   return transaction;
 };
 
-export const getTransaction = (id: string): Transaction | null => transactions[id] || null;
+export const getTransaction = (id: string): Transaction | null => {
+  const transaction = transactions[id];
+  if (!transaction) {
+    logger.debug('Transaction lookup failed:', { transactionId: id });
+  }
+  return transaction || null;
+};
