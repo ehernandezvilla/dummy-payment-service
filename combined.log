@@ -12,3 +12,10 @@
 {"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-13T17:40:42.632Z"}
 {"level":"info","message":"Server running on port 3000","timestamp":"2024-11-13T17:40:45.658Z"}
 {"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-13T17:40:45.661Z"}
+{"amount":1000,"level":"info","message":"Transaction created:","timestamp":"2024-11-13T17:42:09.919Z","transactionId":"03644a35-ecfd-4748-b53d-68602e656307","userId":"user_123"}
+{"amount":1000,"level":"info","message":"Payment initiated:","timestamp":"2024-11-13T17:42:09.920Z","transactionId":"03644a35-ecfd-4748-b53d-68602e656307","userId":"user_123"}
+{"expectedSignature":"36c7e41452240480aa6857cc7f4aded1ce5448a3628d6fcb8da574b837deff37","level":"warn","message":"Invalid webhook signature","receivedSignature":"0a5c117e73509b2163d816b2345adf2bb61bf0bd3c97aa3aea80da1c67eefb5c","timestamp":"2024-11-13T17:43:22.099Z"}
+{"amount":1000,"level":"info","message":"Transaction created:","timestamp":"2024-11-13T17:43:30.608Z","transactionId":"3ad5bc9c-66d4-4018-9472-28600cd22dbb","userId":"user_123"}
+{"amount":1000,"level":"info","message":"Payment initiated:","timestamp":"2024-11-13T17:43:30.609Z","transactionId":"3ad5bc9c-66d4-4018-9472-28600cd22dbb","userId":"user_123"}
+{"expectedSignature":"f210b24b922a2b78d4e88bb80aa82a4cf9c8a8852c286e3cfb437ab514d90d3e","level":"warn","message":"Invalid webhook signature","receivedSignature":"0a5c117e73509b2163d816b2345adf2bb61bf0bd3c97aa3aea80da1c67eefb5c","timestamp":"2024-11-13T17:43:47.856Z"}
+{"expectedSignature":"77a8eb27ebd74329aea13563d48b1d10931c33d6d88b52c9c6a0beec95dc024e","level":"warn","message":"Invalid webhook signature","receivedSignature":"0a5c117e73509b2163d816b2345adf2bb61bf0bd3c97aa3aea80da1c67eefb5c","timestamp":"2024-11-13T17:43:59.194Z"}
