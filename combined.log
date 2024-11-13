@@ -4,3 +4,11 @@
 {"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-13T16:25:31.324Z"}
 {"amount":99.99,"level":"info","message":"Transaction created:","timestamp":"2024-11-13T16:25:45.762Z","transactionId":"3d40dafa-8ef4-4061-bcdb-0d13712242e1","userId":"user123"}
 {"amount":99.99,"level":"info","message":"Payment initiated:","timestamp":"2024-11-13T16:25:45.762Z","transactionId":"3d40dafa-8ef4-4061-bcdb-0d13712242e1","userId":"user123"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-13T17:30:10.653Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-13T17:30:10.656Z"}
+{"amount":99.99,"level":"info","message":"Transaction created:","timestamp":"2024-11-13T17:30:11.635Z","transactionId":"e8b34581-dc8a-4087-8792-3b7820078928","userId":"user123"}
+{"amount":99.99,"level":"info","message":"Payment initiated:","timestamp":"2024-11-13T17:30:11.636Z","transactionId":"e8b34581-dc8a-4087-8792-3b7820078928","userId":"user123"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-13T17:40:42.629Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-13T17:40:42.632Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-13T17:40:45.658Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-13T17:40:45.661Z"}

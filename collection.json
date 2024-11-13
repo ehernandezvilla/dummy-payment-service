@@ -1,0 +1,92 @@
+{
+	"info": {
+		"name": "Payment Webhook API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. Iniciar Pago",
+			"request": {
+				"method": "POST",
+				"url": "http://localhost:3000/api/payments/initiate",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 1000,\n    \"userId\": \"user_123\",\n    \"metadata\": {\n        \"description\": \"Pago de prueba\"\n    }\n}"
+				}
+			}
+		},
+		{
+			"name": "2. Simular Webhook",
+			"request": {
+				"method": "POST",
+				"url": "http://localhost:3000/webhooks/payment",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-webhook-signature",
+						"value": "{{webhookSignature}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"evt_{{timestamp}}\",\n    \"type\": \"payment.success\",\n    \"created\": {{timestamp}},\n    \"data\": {\n        \"transactionId\": \"{{transactionId}}\",\n        \"amount\": 1000,\n        \"userId\": \"user_123\"\n    }\n}"
+				}
+			}
+		},
+		{
+			"name": "3. Verificar Estado del Pago",
+			"request": {
+				"method": "GET",
+				"url": "http://localhost:3000/api/payments/{{transactionId}}/status"
+			}
+		},
+		{
+			"name": "4. Estado de la Cola",
+			"request": {
+				"method": "GET",
+				"url": "http://localhost:3000/webhooks/status"
+			}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"// Generar timestamp",
+					"pm.variables.set('timestamp', Date.now());",
+					"",
+					"// Si es el endpoint de webhook, generar firma",
+					"if(pm.request.url.getPath() === '/webhooks/payment') {",
+					"    const webhookSecret = pm.variables.get('webhookSecret');",
+					"    const payload = pm.request.body.raw;",
+					"    ",
+					"    // Generar firma HMAC usando CryptoJS",
+					"    const signature = CryptoJS.HmacSHA256(payload, webhookSecret).toString();",
+					"    pm.variables.set('webhookSignature', signature);",
+					"}"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "webhookSecret",
+			"value": "tu_secreto_muy_seguro_aqui"
+		},
+		{
+			"key": "transactionId",
+			"value": ""
+		}
+	]
+}
