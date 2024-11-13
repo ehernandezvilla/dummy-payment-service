@@ -126,9 +126,7 @@ Documentación Swagger UI: `http://localhost:3000/api-docs`
 
 ```bash
 npm run dev     # Inicia el servidor en modo desarrollo
-npm run build   # Compila el proyecto
 npm start       # Inicia el servidor en modo producción
-npm run test    # Ejecuta las pruebas
 ```
 
 ## 📝 Documentación
