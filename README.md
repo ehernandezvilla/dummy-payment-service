@@ -21,8 +21,8 @@ Este proyecto implementa una API RESTful para gestionar pagos y transacciones, c
 
 1. Clona el repositorio:
 ```bash
-git clone [URL_DE_TU_REPOSITORIO]
-cd [NOMBRE_DEL_DIRECTORIO]
+git clone [[dummy-payment-service](https://github.com/ehernandezvilla/dummy-payment-service)]
+cd dummy-payment-service
 ```
 
 2. Instala las dependencias:
@@ -150,8 +150,8 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.m
 ## 👥 Autor
 
 [TU_NOMBRE]
-- GitHub: [@tu_usuario](https://github.com/ehernandezvilla)
-- LinkedIn: [tu_perfil](https://www.linkedin.com/in/ehernandezvilla/)
+- GitHub: [@ehernandezvilla](https://github.com/ehernandezvilla)
+- LinkedIn: [/ehernandezvilla](https://www.linkedin.com/in/ehernandezvilla/)
 
 ## 🙏 Agradecimientos
 
@@ -159,4 +159,4 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.m
 - Inspirado en las mejores prácticas de la comunidad de TypeScript y Express
 
 ---
-⌨️ con ❤️ por [TU_NOMBRE] 😊
+⌨️ con ❤️ 
