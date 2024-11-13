@@ -1,21 +1,27 @@
 // src/middleware/webhookAuth.ts
-import { RequestHandler } from 'express';
+import { Request, Response, NextFunction } from 'express';
 import crypto from 'crypto';
 import logger from '../config/logger';
 
-export const validateWebhookSignature: RequestHandler = async (req, res, next) => {
+export const validateWebhookSignature = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+): Promise<void> => {
     try {
         const signature = req.headers['x-webhook-signature'];
         const webhookSecret = process.env.WEBHOOK_SECRET;
 
         if (!webhookSecret) {
             logger.error('WEBHOOK_SECRET not configured');
-            return res.status(500).json({ error: 'Server configuration error' });
+            res.status(500).json({ error: 'Server configuration error' });
+            return;
         }
 
         if (!signature) {
             logger.warn('Webhook signature missing');
-            return res.status(401).json({ error: 'No signature provided' });
+            res.status(401).json({ error: 'No signature provided' });
+            return;
         }
 
         const payload = JSON.stringify(req.body);
@@ -27,7 +33,8 @@ export const validateWebhookSignature: RequestHandler = async (req, res, next) =
                 receivedSignature: signature,
                 expectedSignature: computedSignature
             });
-            return res.status(401).json({ error: 'Invalid signature' });
+            res.status(401).json({ error: 'Invalid signature' });
+            return;
         }
 
         // Validar timestamp para prevenir replay attacks
@@ -36,12 +43,14 @@ export const validateWebhookSignature: RequestHandler = async (req, res, next) =
         
         if (!timestamp || timestamp < fiveMinutesAgo) {
             logger.warn('Webhook event expired or invalid timestamp', { timestamp });
-            return res.status(400).json({ error: 'Event expired or invalid timestamp' });
+            res.status(400).json({ error: 'Event expired or invalid timestamp' });
+            return;
         }
 
-        return next();
+        next();
     } catch (error) {
         logger.error('Error validating webhook signature:', error);
-        return res.status(500).json({ error: 'Internal server error' });
+        res.status(500).json({ error: 'Internal server error' });
+        return;
     }
 };
