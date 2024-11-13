@@ -1,18 +1,22 @@
 // src/controllers/webhookController.ts
-import { RequestHandler } from 'express';
+import { Request, Response } from 'express';
 import { WebhookEvent } from '../types/webhook';
 import webhookProcessor from '../services/webhookProcessor';
 import queueService from '../services/queueService';
 import logger from '../config/logger';
 
-export const handlePaymentWebhook: RequestHandler = async (req, res) => {
+export const handlePaymentWebhook = async (
+    req: Request,
+    res: Response
+): Promise<void> => {
     try {
         const event = req.body as WebhookEvent;
 
         // Validar la estructura del evento
         if (!event.id || !event.type || !event.data) {
             logger.warn('Invalid webhook event structure', { event });
-            return res.status(400).json({ error: 'Invalid event structure' });
+            res.status(400).json({ error: 'Invalid event structure' });
+            return;
         }
 
         // Responder rápidamente
@@ -33,12 +37,19 @@ export const handlePaymentWebhook: RequestHandler = async (req, res) => {
 
     } catch (error) {
         logger.error('Error handling webhook:', error);
-        // Ya que ya respondimos al cliente, aquí solo logueamos el error
+        // Si aún no hemos enviado una respuesta, enviamos error
+        if (!res.headersSent) {
+            res.status(500).json({ error: 'Internal server error' });
+        }
+        return;
     }
 };
 
-// Endpoint opcional para verificar el estado de la cola
-export const getWebhookQueueStatus: RequestHandler = (req, res) => {
+// Endpoint para verificar el estado de la cola
+export const getWebhookQueueStatus = async (
+    req: Request,
+    res: Response
+): Promise<void> => {
     try {
         const status = queueService.getQueueStatus();
         res.json(status);
@@ -46,4 +57,5 @@ export const getWebhookQueueStatus: RequestHandler = (req, res) => {
         logger.error('Error getting queue status:', error);
         res.status(500).json({ error: 'Error getting queue status' });
     }
+    return;
 };

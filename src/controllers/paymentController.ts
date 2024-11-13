@@ -1,25 +1,30 @@
 // src/controllers/paymentController.ts
-import { RequestHandler } from 'express';
+import { Request, Response } from 'express';
 import { v4 as uuidv4 } from 'uuid';
 import { createTransaction, getTransaction } from '../models/Transaction';
 import logger from '../config/logger';
 
-export const initiatePayment: RequestHandler = (req, res) => {
+export const initiatePayment = async (
+    req: Request,
+    res: Response
+): Promise<void> => {
     try {
         const { amount, userId, metadata } = req.body;
 
         if (!amount || !userId) {
-            return res.status(400).json({ 
+            res.status(400).json({ 
                 error: 'Missing required fields',
                 required: ['amount', 'userId']
             });
+            return;
         }
 
         if (typeof amount !== 'number' || amount <= 0) {
-            return res.status(400).json({ 
+            res.status(400).json({ 
                 error: 'Invalid amount',
                 message: 'Amount must be a positive number'
             });
+            return;
         }
 
         const transactionId = uuidv4();
@@ -31,7 +36,7 @@ export const initiatePayment: RequestHandler = (req, res) => {
             amount
         });
 
-        return res.status(201).json({
+        res.status(201).json({
             transactionId: transaction.id,
             status: transaction.status,
             amount: transaction.amount,
@@ -40,30 +45,40 @@ export const initiatePayment: RequestHandler = (req, res) => {
                 status: `/api/payments/${transaction.id}/status`
             }
         });
+        return;
+
     } catch (error) {
         logger.error('Error initiating payment:', error);
-        return res.status(500).json({ error: 'Error initiating payment' });
+        res.status(500).json({ error: 'Error initiating payment' });
+        return;
     }
 };
 
-export const getPaymentStatus: RequestHandler = (req, res) => {
+export const getPaymentStatus = async (
+    req: Request,
+    res: Response
+): Promise<void> => {
     try {
         const { transactionId } = req.params;
         const transaction = getTransaction(transactionId);
 
         if (!transaction) {
-            return res.status(404).json({ error: 'Transaction not found' });
+            res.status(404).json({ error: 'Transaction not found' });
+            return;
         }
 
-        return res.json({
+        res.json({
             transactionId: transaction.id,
             status: transaction.status,
             amount: transaction.amount,
             createdAt: transaction.createdAt,
             updatedAt: transaction.updatedAt
         });
+        return;
+
     } catch (error) {
         logger.error('Error getting payment status:', error);
-        return res.status(500).json({ error: 'Error getting payment status' });
+        res.status(500).json({ error: 'Error getting payment status' });
+        return;
     }
 };
