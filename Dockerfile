@@ -1,5 +1,5 @@
 # Etapa de desarrollo
-FROM node:18-alpine as builder
+FROM node:18-alpine AS builder
 
 WORKDIR /app
 
@@ -7,14 +7,19 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-# Copiar el código fuente
-COPY . .
+# Copiar archivos de configuración
+COPY tsconfig.json ./
 
-# Compilar TypeScript
-RUN npm run build
+# Copiar el código fuente
+COPY src/ ./src/
+
+# Verificar la estructura y compilar TypeScript
+RUN ls -la && \
+    echo "Compiling TypeScript..." && \
+    npm run build
 
 # Etapa de producción
-FROM node:18-alpine as production
+FROM node:18-alpine AS production
 
 WORKDIR /app
 
@@ -36,7 +41,10 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
 CMD ["npm", "start"]
 
 # Etapa de desarrollo
-FROM builder as development
+FROM builder AS development
+
+# Instalar nodemon globalmente para desarrollo
+RUN npm install -g ts-node-dev
 
 # Comando para desarrollo con hot-reload
 CMD ["npm", "run", "dev"]
