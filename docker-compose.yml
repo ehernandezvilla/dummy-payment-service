@@ -1,10 +1,8 @@
-version: '3.8'
-
 services:
   payment-gateway:
     build:
       context: .
-      target: builder # Usamos la etapa de builder para desarrollo
+      target: development
     container_name: payment-gateway
     ports:
       - "3000:3000"
@@ -16,9 +14,9 @@ services:
       - QUEUE_CONCURRENCY=2
       - LOG_LEVEL=debug
     volumes:
-      - .:/app # Para desarrollo, montamos el código fuente
-      - /app/node_modules # Evitamos montar los node_modules locales
-    command: npm run dev # Usar ts-node-dev para desarrollo
+      - .:/app
+      - /app/node_modules
+    command: npm run dev
     healthcheck:
       test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000/health"]
       interval: 30s
