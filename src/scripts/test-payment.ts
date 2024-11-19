@@ -6,7 +6,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const API_BASE_URL = 'http://localhost:3000';
-const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET || 'your-webhook-secret-key-here';
+const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET || '';
 
 async function simulatePaymentFlow() {
     try {

@@ -30,3 +30,338 @@
 {"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-19T01:56:17.771Z"}
 {"level":"info","message":"Server running on port 3000","timestamp":"2024-11-19T01:56:26.502Z"}
 {"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-19T01:56:26.504Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-19T01:57:08.344Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-19T01:57:08.347Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-19T01:57:25.783Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-19T01:57:25.787Z"}
+{"amount":99.99,"level":"info","message":"Transaction created:","timestamp":"2024-11-19T01:58:06.489Z","transactionId":"fcff5973-fa9c-4d16-a61e-3c7d300a6537","userId":"user123"}
+{"amount":99.99,"level":"info","message":"Payment initiated:","timestamp":"2024-11-19T01:58:06.490Z","transactionId":"fcff5973-fa9c-4d16-a61e-3c7d300a6537","userId":"user123"}
+{"eventId":"8427a2d6-7394-43bc-ba95-0b67837310b6","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":2,"pending":0,"total":0},"timestamp":"2024-11-19T01:58:07.510Z"}
+{"eventId":"8427a2d6-7394-43bc-ba95-0b67837310b6","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T01:58:07.510Z","type":"payment.created"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":1},"timestamp":"2024-11-19T01:58:07.512Z"}
+{"eventId":"8427a2d6-7394-43bc-ba95-0b67837310b6","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T01:58:07.515Z","type":"payment.created"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_pending","oldStatus":"payment_pending","timestamp":"2024-11-19T01:58:07.515Z","transactionId":"fcff5973-fa9c-4d16-a61e-3c7d300a6537"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":1},"timestamp":"2024-11-19T01:58:07.516Z"}
+{"eventId":"8427a2d6-7394-43bc-ba95-0b67837310b6","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":1},"taskId":"32ddb98d-1428-4869-928a-d03b46572ca1","timestamp":"2024-11-19T01:58:07.517Z"}
+{"eventId":"969f92eb-23cf-4104-a88a-749bdee9ba1a","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":2,"pending":0,"total":1},"timestamp":"2024-11-19T01:58:09.520Z"}
+{"eventId":"969f92eb-23cf-4104-a88a-749bdee9ba1a","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T01:58:09.520Z","type":"payment.processing"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":2},"timestamp":"2024-11-19T01:58:09.521Z"}
+{"eventId":"969f92eb-23cf-4104-a88a-749bdee9ba1a","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T01:58:09.522Z","type":"payment.processing"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_processing","oldStatus":"payment_processing","timestamp":"2024-11-19T01:58:09.523Z","transactionId":"fcff5973-fa9c-4d16-a61e-3c7d300a6537"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":2},"timestamp":"2024-11-19T01:58:09.523Z"}
+{"eventId":"969f92eb-23cf-4104-a88a-749bdee9ba1a","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":2},"taskId":"09b482df-b8d6-4645-aae0-eb49dba3a609","timestamp":"2024-11-19T01:58:09.524Z"}
+{"eventId":"d4f8806b-7fc4-469a-b1a0-9583a98305b4","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":2,"pending":0,"total":2},"timestamp":"2024-11-19T01:58:12.534Z"}
+{"eventId":"d4f8806b-7fc4-469a-b1a0-9583a98305b4","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T01:58:12.534Z","type":"payment.success"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":3},"timestamp":"2024-11-19T01:58:12.535Z"}
+{"eventId":"d4f8806b-7fc4-469a-b1a0-9583a98305b4","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T01:58:12.537Z","type":"payment.success"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_success","oldStatus":"payment_success","timestamp":"2024-11-19T01:58:12.537Z","transactionId":"fcff5973-fa9c-4d16-a61e-3c7d300a6537"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":3},"timestamp":"2024-11-19T01:58:12.538Z"}
+{"eventId":"d4f8806b-7fc4-469a-b1a0-9583a98305b4","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":3},"taskId":"61578470-4a08-4a3f-bc46-c1875f431fb5","timestamp":"2024-11-19T01:58:12.538Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-19T02:00:54.378Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-19T02:00:54.380Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-19T02:01:08.633Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-19T02:01:08.637Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-19T02:01:33.999Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-19T02:01:34.002Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-19T02:01:37.334Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-19T02:01:37.337Z"}
+{"amount":99.99,"level":"info","message":"Transaction created:","timestamp":"2024-11-19T02:01:49.761Z","transactionId":"7550dfff-6639-4027-a6b7-fb8d6a01f16e","userId":"user123"}
+{"amount":99.99,"level":"info","message":"Payment initiated:","timestamp":"2024-11-19T02:01:49.762Z","transactionId":"7550dfff-6639-4027-a6b7-fb8d6a01f16e","userId":"user123"}
+{"eventId":"ba88294e-c466-471f-8379-f94e3eca0b9c","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":2,"pending":0,"total":0},"timestamp":"2024-11-19T02:01:50.791Z"}
+{"eventId":"ba88294e-c466-471f-8379-f94e3eca0b9c","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:01:50.792Z","type":"payment.created"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":1},"timestamp":"2024-11-19T02:01:50.795Z"}
+{"eventId":"ba88294e-c466-471f-8379-f94e3eca0b9c","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:01:50.797Z","type":"payment.created"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_pending","oldStatus":"payment_pending","timestamp":"2024-11-19T02:01:50.798Z","transactionId":"7550dfff-6639-4027-a6b7-fb8d6a01f16e"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":1},"timestamp":"2024-11-19T02:01:50.799Z"}
+{"level":"info","message":"Payment created processed","timestamp":"2024-11-19T02:01:50.799Z","transactionId":"7550dfff-6639-4027-a6b7-fb8d6a01f16e"}
+{"eventId":"ba88294e-c466-471f-8379-f94e3eca0b9c","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":1},"taskId":"20acaf44-1ee0-4045-b57c-52aecb92347d","timestamp":"2024-11-19T02:01:50.800Z"}
+{"eventId":"ff489718-3a68-46ce-88d9-ac3d5c19e90b","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":2,"pending":0,"total":1},"timestamp":"2024-11-19T02:01:52.813Z"}
+{"eventId":"ff489718-3a68-46ce-88d9-ac3d5c19e90b","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:01:52.814Z","type":"payment.processing"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":2},"timestamp":"2024-11-19T02:01:52.815Z"}
+{"eventId":"ff489718-3a68-46ce-88d9-ac3d5c19e90b","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:01:52.817Z","type":"payment.processing"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_processing","oldStatus":"payment_pending","timestamp":"2024-11-19T02:01:52.818Z","transactionId":"7550dfff-6639-4027-a6b7-fb8d6a01f16e"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":2},"timestamp":"2024-11-19T02:01:52.819Z"}
+{"level":"info","message":"Payment processing status updated","timestamp":"2024-11-19T02:01:52.819Z","transactionId":"7550dfff-6639-4027-a6b7-fb8d6a01f16e"}
+{"eventId":"ff489718-3a68-46ce-88d9-ac3d5c19e90b","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":2},"taskId":"41639d8e-07ea-4308-b23a-b0ef63b3136d","timestamp":"2024-11-19T02:01:52.820Z"}
+{"eventId":"d1a648bb-f429-4a94-9d0a-e7e1824e8695","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":2,"pending":0,"total":2},"timestamp":"2024-11-19T02:01:55.834Z"}
+{"eventId":"d1a648bb-f429-4a94-9d0a-e7e1824e8695","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:01:55.835Z","type":"payment.success"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":3},"timestamp":"2024-11-19T02:01:55.836Z"}
+{"eventId":"d1a648bb-f429-4a94-9d0a-e7e1824e8695","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:01:55.837Z","type":"payment.success"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_success","oldStatus":"payment_processing","timestamp":"2024-11-19T02:01:55.838Z","transactionId":"7550dfff-6639-4027-a6b7-fb8d6a01f16e"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":3},"timestamp":"2024-11-19T02:01:55.838Z"}
+{"level":"info","message":"Payment success processed","timestamp":"2024-11-19T02:01:55.839Z","transactionId":"7550dfff-6639-4027-a6b7-fb8d6a01f16e"}
+{"eventId":"d1a648bb-f429-4a94-9d0a-e7e1824e8695","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":3},"taskId":"eed2bc7c-7fdb-4214-9ac9-857f3d130a15","timestamp":"2024-11-19T02:01:55.839Z"}
+{"amount":199.99,"level":"info","message":"Transaction created:","timestamp":"2024-11-19T02:01:57.849Z","transactionId":"53209100-c291-46fa-b7a0-9804f1cdf9a4","userId":"user123"}
+{"amount":199.99,"level":"info","message":"Payment initiated:","timestamp":"2024-11-19T02:01:57.850Z","transactionId":"53209100-c291-46fa-b7a0-9804f1cdf9a4","userId":"user123"}
+{"eventId":"61c3bb8a-1f8e-45d9-9774-86c5431c5910","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":2,"pending":0,"total":3},"timestamp":"2024-11-19T02:01:58.862Z"}
+{"eventId":"61c3bb8a-1f8e-45d9-9774-86c5431c5910","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:01:58.863Z","type":"payment.created"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":4},"timestamp":"2024-11-19T02:01:58.864Z"}
+{"eventId":"61c3bb8a-1f8e-45d9-9774-86c5431c5910","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:01:58.865Z","type":"payment.created"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_pending","oldStatus":"payment_pending","timestamp":"2024-11-19T02:01:58.865Z","transactionId":"53209100-c291-46fa-b7a0-9804f1cdf9a4"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":4},"timestamp":"2024-11-19T02:01:58.866Z"}
+{"level":"info","message":"Payment created processed","timestamp":"2024-11-19T02:01:58.866Z","transactionId":"53209100-c291-46fa-b7a0-9804f1cdf9a4"}
+{"eventId":"61c3bb8a-1f8e-45d9-9774-86c5431c5910","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":4},"taskId":"b2167df5-c216-4490-9b2a-aa87d258a873","timestamp":"2024-11-19T02:01:58.866Z"}
+{"eventId":"8404e6f5-b9c0-42af-bcc8-03d4b6fc0b07","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":2,"pending":0,"total":4},"timestamp":"2024-11-19T02:02:00.882Z"}
+{"eventId":"8404e6f5-b9c0-42af-bcc8-03d4b6fc0b07","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:02:00.883Z","type":"payment.processing"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":5},"timestamp":"2024-11-19T02:02:00.884Z"}
+{"eventId":"8404e6f5-b9c0-42af-bcc8-03d4b6fc0b07","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:02:00.886Z","type":"payment.processing"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_processing","oldStatus":"payment_pending","timestamp":"2024-11-19T02:02:00.886Z","transactionId":"53209100-c291-46fa-b7a0-9804f1cdf9a4"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":5},"timestamp":"2024-11-19T02:02:00.888Z"}
+{"level":"info","message":"Payment processing status updated","timestamp":"2024-11-19T02:02:00.888Z","transactionId":"53209100-c291-46fa-b7a0-9804f1cdf9a4"}
+{"eventId":"8404e6f5-b9c0-42af-bcc8-03d4b6fc0b07","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":5},"taskId":"3ae94cd5-b724-4757-97fa-1bff39ff68e2","timestamp":"2024-11-19T02:02:00.888Z"}
+{"eventId":"73e91670-0272-4434-9fd2-d4b2a9c8e7d8","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":2,"pending":0,"total":5},"timestamp":"2024-11-19T02:02:03.905Z"}
+{"eventId":"73e91670-0272-4434-9fd2-d4b2a9c8e7d8","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:02:03.906Z","type":"payment.failed"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":6},"timestamp":"2024-11-19T02:02:03.907Z"}
+{"eventId":"73e91670-0272-4434-9fd2-d4b2a9c8e7d8","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:02:03.908Z","type":"payment.failed"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_failed","oldStatus":"payment_processing","timestamp":"2024-11-19T02:02:03.908Z","transactionId":"53209100-c291-46fa-b7a0-9804f1cdf9a4"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":6},"timestamp":"2024-11-19T02:02:03.909Z"}
+{"level":"info","message":"Payment failure processed","timestamp":"2024-11-19T02:02:03.909Z","transactionId":"53209100-c291-46fa-b7a0-9804f1cdf9a4"}
+{"eventId":"73e91670-0272-4434-9fd2-d4b2a9c8e7d8","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":6},"taskId":"dfc03197-2b4f-44a4-9eb0-5f05defaffa5","timestamp":"2024-11-19T02:02:03.910Z"}
+{"amount":299.99,"level":"info","message":"Transaction created:","timestamp":"2024-11-19T02:02:05.929Z","transactionId":"45623a61-795f-4373-9cf6-6b98c80f51c4","userId":"user123"}
+{"amount":299.99,"level":"info","message":"Payment initiated:","timestamp":"2024-11-19T02:02:05.930Z","transactionId":"45623a61-795f-4373-9cf6-6b98c80f51c4","userId":"user123"}
+{"eventId":"4bed8336-166e-47b7-a2c7-ecbfa7dec509","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":2,"pending":0,"total":6},"timestamp":"2024-11-19T02:02:06.942Z"}
+{"eventId":"4bed8336-166e-47b7-a2c7-ecbfa7dec509","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:02:06.943Z","type":"payment.created"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":7},"timestamp":"2024-11-19T02:02:06.944Z"}
+{"eventId":"4bed8336-166e-47b7-a2c7-ecbfa7dec509","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:02:06.945Z","type":"payment.created"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_pending","oldStatus":"payment_pending","timestamp":"2024-11-19T02:02:06.946Z","transactionId":"45623a61-795f-4373-9cf6-6b98c80f51c4"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":7},"timestamp":"2024-11-19T02:02:06.946Z"}
+{"level":"info","message":"Payment created processed","timestamp":"2024-11-19T02:02:06.947Z","transactionId":"45623a61-795f-4373-9cf6-6b98c80f51c4"}
+{"eventId":"4bed8336-166e-47b7-a2c7-ecbfa7dec509","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":7},"taskId":"4cbe883a-29d8-4c86-a741-11fe72b9b4e2","timestamp":"2024-11-19T02:02:06.947Z"}
+{"eventId":"81a469fc-e8e2-47f7-82c2-aeb1b5d24737","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":2,"pending":0,"total":7},"timestamp":"2024-11-19T02:02:08.951Z"}
+{"eventId":"81a469fc-e8e2-47f7-82c2-aeb1b5d24737","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:02:08.951Z","type":"payment.processing"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":8},"timestamp":"2024-11-19T02:02:08.953Z"}
+{"eventId":"81a469fc-e8e2-47f7-82c2-aeb1b5d24737","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:02:08.953Z","type":"payment.processing"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_processing","oldStatus":"payment_pending","timestamp":"2024-11-19T02:02:08.954Z","transactionId":"45623a61-795f-4373-9cf6-6b98c80f51c4"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":8},"timestamp":"2024-11-19T02:02:08.954Z"}
+{"level":"info","message":"Payment processing status updated","timestamp":"2024-11-19T02:02:08.955Z","transactionId":"45623a61-795f-4373-9cf6-6b98c80f51c4"}
+{"eventId":"81a469fc-e8e2-47f7-82c2-aeb1b5d24737","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":8},"taskId":"e7f14548-ac22-45fe-b5a5-7cc8fb0eb6ef","timestamp":"2024-11-19T02:02:08.955Z"}
+{"eventId":"16383f63-844d-41bd-b685-a25d3c49d7e7","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":2,"pending":0,"total":8},"timestamp":"2024-11-19T02:02:11.972Z"}
+{"eventId":"16383f63-844d-41bd-b685-a25d3c49d7e7","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:02:11.973Z","type":"payment.cancelled"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":9},"timestamp":"2024-11-19T02:02:11.975Z"}
+{"eventId":"16383f63-844d-41bd-b685-a25d3c49d7e7","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:02:11.976Z","type":"payment.cancelled"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_cancelled","oldStatus":"payment_processing","timestamp":"2024-11-19T02:02:11.976Z","transactionId":"45623a61-795f-4373-9cf6-6b98c80f51c4"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":9},"timestamp":"2024-11-19T02:02:11.977Z"}
+{"level":"info","message":"Payment cancellation processed","timestamp":"2024-11-19T02:02:11.977Z","transactionId":"45623a61-795f-4373-9cf6-6b98c80f51c4"}
+{"eventId":"16383f63-844d-41bd-b685-a25d3c49d7e7","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":9},"taskId":"4efe8f3b-8c54-4de9-a050-2f079593142d","timestamp":"2024-11-19T02:02:11.978Z"}
+{"amount":399.99,"level":"info","message":"Transaction created:","timestamp":"2024-11-19T02:02:13.980Z","transactionId":"4a7ebb7c-655c-4b9a-a10c-14ac28515cd2","userId":"user123"}
+{"amount":399.99,"level":"info","message":"Payment initiated:","timestamp":"2024-11-19T02:02:13.980Z","transactionId":"4a7ebb7c-655c-4b9a-a10c-14ac28515cd2","userId":"user123"}
+{"eventId":"38191a48-bc8f-457e-958d-9805bb7538b1","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":2,"pending":0,"total":9},"timestamp":"2024-11-19T02:02:14.992Z"}
+{"eventId":"38191a48-bc8f-457e-958d-9805bb7538b1","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:02:14.993Z","type":"payment.created"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":10},"timestamp":"2024-11-19T02:02:14.994Z"}
+{"eventId":"38191a48-bc8f-457e-958d-9805bb7538b1","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:02:14.995Z","type":"payment.created"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_pending","oldStatus":"payment_pending","timestamp":"2024-11-19T02:02:14.995Z","transactionId":"4a7ebb7c-655c-4b9a-a10c-14ac28515cd2"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":10},"timestamp":"2024-11-19T02:02:14.995Z"}
+{"level":"info","message":"Payment created processed","timestamp":"2024-11-19T02:02:14.996Z","transactionId":"4a7ebb7c-655c-4b9a-a10c-14ac28515cd2"}
+{"eventId":"38191a48-bc8f-457e-958d-9805bb7538b1","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":10},"taskId":"1db00fc7-6d28-4f89-88f7-685520d70877","timestamp":"2024-11-19T02:02:14.996Z"}
+{"eventId":"28c3d2e5-d4d4-455a-85a2-ca6506dd3a9d","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":2,"pending":0,"total":10},"timestamp":"2024-11-19T02:02:20.008Z"}
+{"eventId":"28c3d2e5-d4d4-455a-85a2-ca6506dd3a9d","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:02:20.009Z","type":"payment.expired"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":11},"timestamp":"2024-11-19T02:02:20.010Z"}
+{"eventId":"28c3d2e5-d4d4-455a-85a2-ca6506dd3a9d","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:02:20.012Z","type":"payment.expired"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_expired","oldStatus":"payment_pending","timestamp":"2024-11-19T02:02:20.012Z","transactionId":"4a7ebb7c-655c-4b9a-a10c-14ac28515cd2"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":11},"timestamp":"2024-11-19T02:02:20.013Z"}
+{"level":"info","message":"Payment expiration processed","timestamp":"2024-11-19T02:02:20.013Z","transactionId":"4a7ebb7c-655c-4b9a-a10c-14ac28515cd2"}
+{"eventId":"28c3d2e5-d4d4-455a-85a2-ca6506dd3a9d","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":11},"taskId":"8662c169-fe8c-4a64-83ed-75f46fca30d2","timestamp":"2024-11-19T02:02:20.013Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-19T02:02:37.586Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-19T02:02:37.589Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-19T02:04:07.794Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-19T02:04:07.802Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-19T02:04:13.581Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-19T02:04:13.584Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-19T02:04:58.220Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-19T02:04:58.223Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-19T02:05:07.542Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-19T02:05:07.545Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-19T02:07:58.269Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-19T02:07:58.272Z"}
+{"amount":99.99,"level":"info","message":"Transaction created:","timestamp":"2024-11-19T02:08:06.907Z","transactionId":"8bab068b-8d84-4c0c-8182-ddf9583ec27b","userId":"user123"}
+{"amount":99.99,"level":"info","message":"Payment initiated:","timestamp":"2024-11-19T02:08:06.908Z","transactionId":"8bab068b-8d84-4c0c-8182-ddf9583ec27b","userId":"user123"}
+{"eventId":"296c3a93-9ebe-4859-8f55-45dd73d0de42","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":1,"pending":0,"total":0},"timestamp":"2024-11-19T02:08:07.933Z"}
+{"eventId":"296c3a93-9ebe-4859-8f55-45dd73d0de42","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:08:07.934Z","type":"payment.created"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":1},"timestamp":"2024-11-19T02:08:07.935Z"}
+{"eventId":"296c3a93-9ebe-4859-8f55-45dd73d0de42","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:08:07.938Z","transactionId":"8bab068b-8d84-4c0c-8182-ddf9583ec27b","type":"payment.created"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_pending","oldStatus":"payment_pending","timestamp":"2024-11-19T02:08:07.938Z","transactionId":"8bab068b-8d84-4c0c-8182-ddf9583ec27b"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":1},"timestamp":"2024-11-19T02:08:07.939Z"}
+{"attempt":1,"level":"info","message":"Transaction status updated successfully","newStatus":"payment_pending","timestamp":"2024-11-19T02:08:07.939Z","transactionId":"8bab068b-8d84-4c0c-8182-ddf9583ec27b"}
+{"eventId":"296c3a93-9ebe-4859-8f55-45dd73d0de42","level":"info","message":"Payment creation processed","timestamp":"2024-11-19T02:08:07.940Z","transactionId":"8bab068b-8d84-4c0c-8182-ddf9583ec27b"}
+{"eventId":"296c3a93-9ebe-4859-8f55-45dd73d0de42","level":"info","message":"Webhook event processed successfully:","timestamp":"2024-11-19T02:08:07.940Z","transactionId":"8bab068b-8d84-4c0c-8182-ddf9583ec27b","type":"payment.created"}
+{"eventId":"296c3a93-9ebe-4859-8f55-45dd73d0de42","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":1},"taskId":"a023b7d7-9260-4f9f-a91a-14cd037d693e","timestamp":"2024-11-19T02:08:07.941Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-19T02:08:12.383Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-19T02:08:12.386Z"}
+{"amount":299.99,"level":"info","message":"Transaction created:","timestamp":"2024-11-19T02:08:14.014Z","transactionId":"6f9525c9-1402-498d-bf47-ccaf383bade3","userId":"user123"}
+{"amount":299.99,"level":"info","message":"Payment initiated:","timestamp":"2024-11-19T02:08:14.015Z","transactionId":"6f9525c9-1402-498d-bf47-ccaf383bade3","userId":"user123"}
+{"eventId":"0c6d9718-ff2f-4124-a712-79b3461da562","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":1,"pending":0,"total":0},"timestamp":"2024-11-19T02:08:15.026Z"}
+{"eventId":"0c6d9718-ff2f-4124-a712-79b3461da562","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:08:15.026Z","type":"payment.created"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":1},"timestamp":"2024-11-19T02:08:15.028Z"}
+{"eventId":"0c6d9718-ff2f-4124-a712-79b3461da562","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:08:15.031Z","transactionId":"6f9525c9-1402-498d-bf47-ccaf383bade3","type":"payment.created"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_pending","oldStatus":"payment_pending","timestamp":"2024-11-19T02:08:15.032Z","transactionId":"6f9525c9-1402-498d-bf47-ccaf383bade3"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":1},"timestamp":"2024-11-19T02:08:15.032Z"}
+{"attempt":1,"level":"info","message":"Transaction status updated successfully","newStatus":"payment_pending","timestamp":"2024-11-19T02:08:15.033Z","transactionId":"6f9525c9-1402-498d-bf47-ccaf383bade3"}
+{"eventId":"0c6d9718-ff2f-4124-a712-79b3461da562","level":"info","message":"Payment creation processed","timestamp":"2024-11-19T02:08:15.034Z","transactionId":"6f9525c9-1402-498d-bf47-ccaf383bade3"}
+{"eventId":"0c6d9718-ff2f-4124-a712-79b3461da562","level":"info","message":"Webhook event processed successfully:","timestamp":"2024-11-19T02:08:15.034Z","transactionId":"6f9525c9-1402-498d-bf47-ccaf383bade3","type":"payment.created"}
+{"eventId":"0c6d9718-ff2f-4124-a712-79b3461da562","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":1},"taskId":"89382457-207d-4d9a-9ec1-c02e8cff5df6","timestamp":"2024-11-19T02:08:15.035Z"}
+{"eventId":"f6868358-9899-4597-95e6-1c8fdcd6037c","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":1,"pending":0,"total":1},"timestamp":"2024-11-19T02:08:17.039Z"}
+{"eventId":"f6868358-9899-4597-95e6-1c8fdcd6037c","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:08:17.040Z","type":"payment.processing"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":2},"timestamp":"2024-11-19T02:08:17.041Z"}
+{"eventId":"f6868358-9899-4597-95e6-1c8fdcd6037c","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:08:17.042Z","transactionId":"6f9525c9-1402-498d-bf47-ccaf383bade3","type":"payment.processing"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_processing","oldStatus":"payment_pending","timestamp":"2024-11-19T02:08:17.042Z","transactionId":"6f9525c9-1402-498d-bf47-ccaf383bade3"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":2},"timestamp":"2024-11-19T02:08:17.043Z"}
+{"attempt":1,"level":"info","message":"Transaction status updated successfully","newStatus":"payment_processing","timestamp":"2024-11-19T02:08:17.043Z","transactionId":"6f9525c9-1402-498d-bf47-ccaf383bade3"}
+{"eventId":"f6868358-9899-4597-95e6-1c8fdcd6037c","level":"info","message":"Payment processing status updated","timestamp":"2024-11-19T02:08:17.044Z","transactionId":"6f9525c9-1402-498d-bf47-ccaf383bade3"}
+{"eventId":"f6868358-9899-4597-95e6-1c8fdcd6037c","level":"info","message":"Webhook event processed successfully:","timestamp":"2024-11-19T02:08:17.044Z","transactionId":"6f9525c9-1402-498d-bf47-ccaf383bade3","type":"payment.processing"}
+{"eventId":"f6868358-9899-4597-95e6-1c8fdcd6037c","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":2},"taskId":"12faba68-f647-49e9-8e72-c9e1af435a16","timestamp":"2024-11-19T02:08:17.045Z"}
+{"eventId":"89ac10e4-bc10-4117-8b86-1806f6da4185","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":1,"pending":0,"total":2},"timestamp":"2024-11-19T02:08:20.560Z"}
+{"eventId":"89ac10e4-bc10-4117-8b86-1806f6da4185","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:08:20.561Z","type":"payment.cancelled"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":3},"timestamp":"2024-11-19T02:08:20.562Z"}
+{"eventId":"89ac10e4-bc10-4117-8b86-1806f6da4185","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:08:20.563Z","transactionId":"6f9525c9-1402-498d-bf47-ccaf383bade3","type":"payment.cancelled"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_cancelled","oldStatus":"payment_processing","timestamp":"2024-11-19T02:08:20.564Z","transactionId":"6f9525c9-1402-498d-bf47-ccaf383bade3"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":3},"timestamp":"2024-11-19T02:08:20.565Z"}
+{"attempt":1,"level":"info","message":"Transaction status updated successfully","newStatus":"payment_cancelled","timestamp":"2024-11-19T02:08:20.565Z","transactionId":"6f9525c9-1402-498d-bf47-ccaf383bade3"}
+{"eventId":"89ac10e4-bc10-4117-8b86-1806f6da4185","level":"info","message":"Payment cancellation processed","timestamp":"2024-11-19T02:08:20.566Z","transactionId":"6f9525c9-1402-498d-bf47-ccaf383bade3"}
+{"eventId":"89ac10e4-bc10-4117-8b86-1806f6da4185","level":"info","message":"Webhook event processed successfully:","timestamp":"2024-11-19T02:08:20.566Z","transactionId":"6f9525c9-1402-498d-bf47-ccaf383bade3","type":"payment.cancelled"}
+{"eventId":"89ac10e4-bc10-4117-8b86-1806f6da4185","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":3},"taskId":"6176be49-cd65-49b7-967b-0fd59a9e7871","timestamp":"2024-11-19T02:08:20.567Z"}
+{"amount":399.99,"level":"info","message":"Transaction created:","timestamp":"2024-11-19T02:08:23.080Z","transactionId":"672f59c9-e5c6-423b-b6d4-3fd9714513ef","userId":"user123"}
+{"amount":399.99,"level":"info","message":"Payment initiated:","timestamp":"2024-11-19T02:08:23.080Z","transactionId":"672f59c9-e5c6-423b-b6d4-3fd9714513ef","userId":"user123"}
+{"eventId":"29b3bf4b-85d3-4916-a89a-f4fedef1e0a1","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":1,"pending":0,"total":3},"timestamp":"2024-11-19T02:08:24.096Z"}
+{"eventId":"29b3bf4b-85d3-4916-a89a-f4fedef1e0a1","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:08:24.097Z","type":"payment.created"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":4},"timestamp":"2024-11-19T02:08:24.098Z"}
+{"eventId":"29b3bf4b-85d3-4916-a89a-f4fedef1e0a1","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:08:24.099Z","transactionId":"672f59c9-e5c6-423b-b6d4-3fd9714513ef","type":"payment.created"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_pending","oldStatus":"payment_pending","timestamp":"2024-11-19T02:08:24.099Z","transactionId":"672f59c9-e5c6-423b-b6d4-3fd9714513ef"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":4},"timestamp":"2024-11-19T02:08:24.100Z"}
+{"attempt":1,"level":"info","message":"Transaction status updated successfully","newStatus":"payment_pending","timestamp":"2024-11-19T02:08:24.100Z","transactionId":"672f59c9-e5c6-423b-b6d4-3fd9714513ef"}
+{"eventId":"29b3bf4b-85d3-4916-a89a-f4fedef1e0a1","level":"info","message":"Payment creation processed","timestamp":"2024-11-19T02:08:24.101Z","transactionId":"672f59c9-e5c6-423b-b6d4-3fd9714513ef"}
+{"eventId":"29b3bf4b-85d3-4916-a89a-f4fedef1e0a1","level":"info","message":"Webhook event processed successfully:","timestamp":"2024-11-19T02:08:24.101Z","transactionId":"672f59c9-e5c6-423b-b6d4-3fd9714513ef","type":"payment.created"}
+{"eventId":"29b3bf4b-85d3-4916-a89a-f4fedef1e0a1","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":4},"taskId":"886727ab-cae9-48a4-b3cc-60e58f748295","timestamp":"2024-11-19T02:08:24.101Z"}
+{"eventId":"b37d37a5-22e1-472c-8379-634bfc6af716","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":1,"pending":0,"total":4},"timestamp":"2024-11-19T02:08:29.109Z"}
+{"eventId":"b37d37a5-22e1-472c-8379-634bfc6af716","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:08:29.110Z","type":"payment.expired"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":5},"timestamp":"2024-11-19T02:08:29.112Z"}
+{"eventId":"b37d37a5-22e1-472c-8379-634bfc6af716","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:08:29.112Z","transactionId":"672f59c9-e5c6-423b-b6d4-3fd9714513ef","type":"payment.expired"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_expired","oldStatus":"payment_pending","timestamp":"2024-11-19T02:08:29.113Z","transactionId":"672f59c9-e5c6-423b-b6d4-3fd9714513ef"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":5},"timestamp":"2024-11-19T02:08:29.114Z"}
+{"attempt":1,"level":"info","message":"Transaction status updated successfully","newStatus":"payment_expired","timestamp":"2024-11-19T02:08:29.114Z","transactionId":"672f59c9-e5c6-423b-b6d4-3fd9714513ef"}
+{"eventId":"b37d37a5-22e1-472c-8379-634bfc6af716","level":"info","message":"Payment expiration processed","timestamp":"2024-11-19T02:08:29.114Z","transactionId":"672f59c9-e5c6-423b-b6d4-3fd9714513ef"}
+{"eventId":"b37d37a5-22e1-472c-8379-634bfc6af716","level":"info","message":"Webhook event processed successfully:","timestamp":"2024-11-19T02:08:29.115Z","transactionId":"672f59c9-e5c6-423b-b6d4-3fd9714513ef","type":"payment.expired"}
+{"eventId":"b37d37a5-22e1-472c-8379-634bfc6af716","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":5},"taskId":"198fa5d5-cc1b-4816-887d-37c92c3a856b","timestamp":"2024-11-19T02:08:29.115Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-19T02:08:40.867Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-19T02:08:40.870Z"}
+{"amount":99.99,"level":"info","message":"Transaction created:","timestamp":"2024-11-19T02:08:42.601Z","transactionId":"349a8fa6-e556-4171-b9c5-c9aa25b02888","userId":"user123"}
+{"amount":99.99,"level":"info","message":"Payment initiated:","timestamp":"2024-11-19T02:08:42.602Z","transactionId":"349a8fa6-e556-4171-b9c5-c9aa25b02888","userId":"user123"}
+{"eventId":"43958349-2456-4ea9-82e1-6cc4acd6f594","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":1,"pending":0,"total":0},"timestamp":"2024-11-19T02:08:43.622Z"}
+{"eventId":"43958349-2456-4ea9-82e1-6cc4acd6f594","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:08:43.623Z","type":"payment.created"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":1},"timestamp":"2024-11-19T02:08:43.624Z"}
+{"eventId":"43958349-2456-4ea9-82e1-6cc4acd6f594","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:08:43.628Z","transactionId":"349a8fa6-e556-4171-b9c5-c9aa25b02888","type":"payment.created"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_pending","oldStatus":"payment_pending","timestamp":"2024-11-19T02:08:43.629Z","transactionId":"349a8fa6-e556-4171-b9c5-c9aa25b02888"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":1},"timestamp":"2024-11-19T02:08:43.630Z"}
+{"attempt":1,"level":"info","message":"Transaction status updated successfully","newStatus":"payment_pending","timestamp":"2024-11-19T02:08:43.631Z","transactionId":"349a8fa6-e556-4171-b9c5-c9aa25b02888"}
+{"eventId":"43958349-2456-4ea9-82e1-6cc4acd6f594","level":"info","message":"Payment creation processed","timestamp":"2024-11-19T02:08:43.631Z","transactionId":"349a8fa6-e556-4171-b9c5-c9aa25b02888"}
+{"eventId":"43958349-2456-4ea9-82e1-6cc4acd6f594","level":"info","message":"Webhook event processed successfully:","timestamp":"2024-11-19T02:08:43.632Z","transactionId":"349a8fa6-e556-4171-b9c5-c9aa25b02888","type":"payment.created"}
+{"eventId":"43958349-2456-4ea9-82e1-6cc4acd6f594","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":1},"taskId":"da0d10c0-6948-44fb-94ba-aed235283523","timestamp":"2024-11-19T02:08:43.633Z"}
+{"eventId":"3e502095-363e-4528-aceb-633031eaa38a","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":1,"pending":0,"total":1},"timestamp":"2024-11-19T02:08:45.645Z"}
+{"eventId":"3e502095-363e-4528-aceb-633031eaa38a","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:08:45.646Z","type":"payment.processing"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":2},"timestamp":"2024-11-19T02:08:45.647Z"}
+{"eventId":"3e502095-363e-4528-aceb-633031eaa38a","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:08:45.648Z","transactionId":"349a8fa6-e556-4171-b9c5-c9aa25b02888","type":"payment.processing"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_processing","oldStatus":"payment_pending","timestamp":"2024-11-19T02:08:45.649Z","transactionId":"349a8fa6-e556-4171-b9c5-c9aa25b02888"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":2},"timestamp":"2024-11-19T02:08:45.649Z"}
+{"attempt":1,"level":"info","message":"Transaction status updated successfully","newStatus":"payment_processing","timestamp":"2024-11-19T02:08:45.650Z","transactionId":"349a8fa6-e556-4171-b9c5-c9aa25b02888"}
+{"eventId":"3e502095-363e-4528-aceb-633031eaa38a","level":"info","message":"Payment processing status updated","timestamp":"2024-11-19T02:08:45.650Z","transactionId":"349a8fa6-e556-4171-b9c5-c9aa25b02888"}
+{"eventId":"3e502095-363e-4528-aceb-633031eaa38a","level":"info","message":"Webhook event processed successfully:","timestamp":"2024-11-19T02:08:45.651Z","transactionId":"349a8fa6-e556-4171-b9c5-c9aa25b02888","type":"payment.processing"}
+{"eventId":"3e502095-363e-4528-aceb-633031eaa38a","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":2},"taskId":"9adc8dff-cd30-48ff-a611-26eabcff8f12","timestamp":"2024-11-19T02:08:45.652Z"}
+{"eventId":"43156138-49d8-43c0-bd79-b237eced3cb3","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":1,"pending":0,"total":2},"timestamp":"2024-11-19T02:08:48.666Z"}
+{"eventId":"43156138-49d8-43c0-bd79-b237eced3cb3","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:08:48.666Z","type":"payment.success"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":3},"timestamp":"2024-11-19T02:08:48.667Z"}
+{"eventId":"43156138-49d8-43c0-bd79-b237eced3cb3","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:08:48.668Z","transactionId":"349a8fa6-e556-4171-b9c5-c9aa25b02888","type":"payment.success"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_success","oldStatus":"payment_processing","timestamp":"2024-11-19T02:08:48.669Z","transactionId":"349a8fa6-e556-4171-b9c5-c9aa25b02888"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":3},"timestamp":"2024-11-19T02:08:48.669Z"}
+{"attempt":1,"level":"info","message":"Transaction status updated successfully","newStatus":"payment_success","timestamp":"2024-11-19T02:08:48.670Z","transactionId":"349a8fa6-e556-4171-b9c5-c9aa25b02888"}
+{"amount":99.99,"eventId":"43156138-49d8-43c0-bd79-b237eced3cb3","level":"info","message":"Payment success processed","timestamp":"2024-11-19T02:08:48.670Z","transactionId":"349a8fa6-e556-4171-b9c5-c9aa25b02888"}
+{"eventId":"43156138-49d8-43c0-bd79-b237eced3cb3","level":"info","message":"Webhook event processed successfully:","timestamp":"2024-11-19T02:08:48.671Z","transactionId":"349a8fa6-e556-4171-b9c5-c9aa25b02888","type":"payment.success"}
+{"eventId":"43156138-49d8-43c0-bd79-b237eced3cb3","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":3},"taskId":"748e6024-88a6-464d-963f-2627b2bd88e2","timestamp":"2024-11-19T02:08:48.671Z"}
+{"amount":199.99,"level":"info","message":"Transaction created:","timestamp":"2024-11-19T02:08:50.679Z","transactionId":"88c62ea8-d01e-4cee-8eaa-737342694df1","userId":"user123"}
+{"amount":199.99,"level":"info","message":"Payment initiated:","timestamp":"2024-11-19T02:08:50.679Z","transactionId":"88c62ea8-d01e-4cee-8eaa-737342694df1","userId":"user123"}
+{"eventId":"e9422012-42ac-4172-8ef0-ff5a15bb5437","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":1,"pending":0,"total":3},"timestamp":"2024-11-19T02:08:51.693Z"}
+{"eventId":"e9422012-42ac-4172-8ef0-ff5a15bb5437","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:08:51.694Z","type":"payment.created"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":4},"timestamp":"2024-11-19T02:08:51.695Z"}
+{"eventId":"e9422012-42ac-4172-8ef0-ff5a15bb5437","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:08:51.696Z","transactionId":"88c62ea8-d01e-4cee-8eaa-737342694df1","type":"payment.created"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_pending","oldStatus":"payment_pending","timestamp":"2024-11-19T02:08:51.697Z","transactionId":"88c62ea8-d01e-4cee-8eaa-737342694df1"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":4},"timestamp":"2024-11-19T02:08:51.697Z"}
+{"attempt":1,"level":"info","message":"Transaction status updated successfully","newStatus":"payment_pending","timestamp":"2024-11-19T02:08:51.697Z","transactionId":"88c62ea8-d01e-4cee-8eaa-737342694df1"}
+{"eventId":"e9422012-42ac-4172-8ef0-ff5a15bb5437","level":"info","message":"Payment creation processed","timestamp":"2024-11-19T02:08:51.698Z","transactionId":"88c62ea8-d01e-4cee-8eaa-737342694df1"}
+{"eventId":"e9422012-42ac-4172-8ef0-ff5a15bb5437","level":"info","message":"Webhook event processed successfully:","timestamp":"2024-11-19T02:08:51.698Z","transactionId":"88c62ea8-d01e-4cee-8eaa-737342694df1","type":"payment.created"}
+{"eventId":"e9422012-42ac-4172-8ef0-ff5a15bb5437","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":4},"taskId":"2bcf38e5-fb6b-4198-9ca4-937df3ecab38","timestamp":"2024-11-19T02:08:51.698Z"}
+{"eventId":"3879f81b-c2da-40c3-a1fb-0f2b4ef42abd","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":1,"pending":0,"total":4},"timestamp":"2024-11-19T02:08:53.717Z"}
+{"eventId":"3879f81b-c2da-40c3-a1fb-0f2b4ef42abd","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:08:53.718Z","type":"payment.processing"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":5},"timestamp":"2024-11-19T02:08:53.718Z"}
+{"eventId":"3879f81b-c2da-40c3-a1fb-0f2b4ef42abd","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:08:53.720Z","transactionId":"88c62ea8-d01e-4cee-8eaa-737342694df1","type":"payment.processing"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_processing","oldStatus":"payment_pending","timestamp":"2024-11-19T02:08:53.720Z","transactionId":"88c62ea8-d01e-4cee-8eaa-737342694df1"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":5},"timestamp":"2024-11-19T02:08:53.721Z"}
+{"attempt":1,"level":"info","message":"Transaction status updated successfully","newStatus":"payment_processing","timestamp":"2024-11-19T02:08:53.721Z","transactionId":"88c62ea8-d01e-4cee-8eaa-737342694df1"}
+{"eventId":"3879f81b-c2da-40c3-a1fb-0f2b4ef42abd","level":"info","message":"Payment processing status updated","timestamp":"2024-11-19T02:08:53.722Z","transactionId":"88c62ea8-d01e-4cee-8eaa-737342694df1"}
+{"eventId":"3879f81b-c2da-40c3-a1fb-0f2b4ef42abd","level":"info","message":"Webhook event processed successfully:","timestamp":"2024-11-19T02:08:53.722Z","transactionId":"88c62ea8-d01e-4cee-8eaa-737342694df1","type":"payment.processing"}
+{"eventId":"3879f81b-c2da-40c3-a1fb-0f2b4ef42abd","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":5},"taskId":"b3836faf-9547-450f-96a5-98b36afc13a4","timestamp":"2024-11-19T02:08:53.723Z"}
+{"eventId":"1da7d8e8-781d-4cc3-a49c-de52b04436f3","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":1,"pending":0,"total":5},"timestamp":"2024-11-19T02:08:57.241Z"}
+{"eventId":"1da7d8e8-781d-4cc3-a49c-de52b04436f3","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:08:57.241Z","type":"payment.failed"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":6},"timestamp":"2024-11-19T02:08:57.242Z"}
+{"eventId":"1da7d8e8-781d-4cc3-a49c-de52b04436f3","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:08:57.243Z","transactionId":"88c62ea8-d01e-4cee-8eaa-737342694df1","type":"payment.failed"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_failed","oldStatus":"payment_processing","timestamp":"2024-11-19T02:08:57.244Z","transactionId":"88c62ea8-d01e-4cee-8eaa-737342694df1"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":6},"timestamp":"2024-11-19T02:08:57.244Z"}
+{"attempt":1,"level":"info","message":"Transaction status updated successfully","newStatus":"payment_failed","timestamp":"2024-11-19T02:08:57.245Z","transactionId":"88c62ea8-d01e-4cee-8eaa-737342694df1"}
+{"eventId":"1da7d8e8-781d-4cc3-a49c-de52b04436f3","level":"info","message":"Payment failure processed","timestamp":"2024-11-19T02:08:57.245Z","transactionId":"88c62ea8-d01e-4cee-8eaa-737342694df1"}
+{"eventId":"1da7d8e8-781d-4cc3-a49c-de52b04436f3","level":"info","message":"Webhook event processed successfully:","timestamp":"2024-11-19T02:08:57.246Z","transactionId":"88c62ea8-d01e-4cee-8eaa-737342694df1","type":"payment.failed"}
+{"eventId":"1da7d8e8-781d-4cc3-a49c-de52b04436f3","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":6},"taskId":"2ce37527-ba18-4969-bfe2-14cf6d78abc1","timestamp":"2024-11-19T02:08:57.246Z"}
+{"amount":299.99,"level":"info","message":"Transaction created:","timestamp":"2024-11-19T02:08:59.255Z","transactionId":"66672ee1-3b5c-4df0-89dc-f23998303b1d","userId":"user123"}
+{"amount":299.99,"level":"info","message":"Payment initiated:","timestamp":"2024-11-19T02:08:59.256Z","transactionId":"66672ee1-3b5c-4df0-89dc-f23998303b1d","userId":"user123"}
+{"eventId":"f4094f4b-5fea-47d2-b00f-9954cef53e61","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":1,"pending":0,"total":6},"timestamp":"2024-11-19T02:09:00.269Z"}
+{"eventId":"f4094f4b-5fea-47d2-b00f-9954cef53e61","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:09:00.270Z","type":"payment.created"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":7},"timestamp":"2024-11-19T02:09:00.271Z"}
+{"eventId":"f4094f4b-5fea-47d2-b00f-9954cef53e61","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:09:00.272Z","transactionId":"66672ee1-3b5c-4df0-89dc-f23998303b1d","type":"payment.created"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_pending","oldStatus":"payment_pending","timestamp":"2024-11-19T02:09:00.272Z","transactionId":"66672ee1-3b5c-4df0-89dc-f23998303b1d"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":7},"timestamp":"2024-11-19T02:09:00.273Z"}
+{"attempt":1,"level":"info","message":"Transaction status updated successfully","newStatus":"payment_pending","timestamp":"2024-11-19T02:09:00.273Z","transactionId":"66672ee1-3b5c-4df0-89dc-f23998303b1d"}
+{"eventId":"f4094f4b-5fea-47d2-b00f-9954cef53e61","level":"info","message":"Payment creation processed","timestamp":"2024-11-19T02:09:00.274Z","transactionId":"66672ee1-3b5c-4df0-89dc-f23998303b1d"}
+{"eventId":"f4094f4b-5fea-47d2-b00f-9954cef53e61","level":"info","message":"Webhook event processed successfully:","timestamp":"2024-11-19T02:09:00.274Z","transactionId":"66672ee1-3b5c-4df0-89dc-f23998303b1d","type":"payment.created"}
+{"eventId":"f4094f4b-5fea-47d2-b00f-9954cef53e61","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":7},"taskId":"59f21f1e-1b1f-4532-b042-566730a52969","timestamp":"2024-11-19T02:09:00.275Z"}
+{"eventId":"4996e638-4bc9-40b4-abfa-3e826bc5be99","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":1,"pending":0,"total":7},"timestamp":"2024-11-19T02:09:02.291Z"}
+{"eventId":"4996e638-4bc9-40b4-abfa-3e826bc5be99","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:09:02.292Z","type":"payment.processing"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":8},"timestamp":"2024-11-19T02:09:02.293Z"}
+{"eventId":"4996e638-4bc9-40b4-abfa-3e826bc5be99","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:09:02.294Z","transactionId":"66672ee1-3b5c-4df0-89dc-f23998303b1d","type":"payment.processing"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_processing","oldStatus":"payment_pending","timestamp":"2024-11-19T02:09:02.295Z","transactionId":"66672ee1-3b5c-4df0-89dc-f23998303b1d"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":8},"timestamp":"2024-11-19T02:09:02.295Z"}
+{"attempt":1,"level":"info","message":"Transaction status updated successfully","newStatus":"payment_processing","timestamp":"2024-11-19T02:09:02.296Z","transactionId":"66672ee1-3b5c-4df0-89dc-f23998303b1d"}
+{"eventId":"4996e638-4bc9-40b4-abfa-3e826bc5be99","level":"info","message":"Payment processing status updated","timestamp":"2024-11-19T02:09:02.296Z","transactionId":"66672ee1-3b5c-4df0-89dc-f23998303b1d"}
+{"eventId":"4996e638-4bc9-40b4-abfa-3e826bc5be99","level":"info","message":"Webhook event processed successfully:","timestamp":"2024-11-19T02:09:02.297Z","transactionId":"66672ee1-3b5c-4df0-89dc-f23998303b1d","type":"payment.processing"}
+{"eventId":"4996e638-4bc9-40b4-abfa-3e826bc5be99","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":8},"taskId":"e3f0a576-ded3-4998-ae52-b6c4d16ef452","timestamp":"2024-11-19T02:09:02.297Z"}
+{"eventId":"3224380c-338a-47e2-adf3-e523220fb857","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":1,"pending":0,"total":8},"timestamp":"2024-11-19T02:09:05.814Z"}
+{"eventId":"3224380c-338a-47e2-adf3-e523220fb857","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:09:05.814Z","type":"payment.cancelled"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":9},"timestamp":"2024-11-19T02:09:05.815Z"}
+{"eventId":"3224380c-338a-47e2-adf3-e523220fb857","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:09:05.816Z","transactionId":"66672ee1-3b5c-4df0-89dc-f23998303b1d","type":"payment.cancelled"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_cancelled","oldStatus":"payment_processing","timestamp":"2024-11-19T02:09:05.817Z","transactionId":"66672ee1-3b5c-4df0-89dc-f23998303b1d"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":9},"timestamp":"2024-11-19T02:09:05.817Z"}
+{"attempt":1,"level":"info","message":"Transaction status updated successfully","newStatus":"payment_cancelled","timestamp":"2024-11-19T02:09:05.818Z","transactionId":"66672ee1-3b5c-4df0-89dc-f23998303b1d"}
+{"eventId":"3224380c-338a-47e2-adf3-e523220fb857","level":"info","message":"Payment cancellation processed","timestamp":"2024-11-19T02:09:05.818Z","transactionId":"66672ee1-3b5c-4df0-89dc-f23998303b1d"}
+{"eventId":"3224380c-338a-47e2-adf3-e523220fb857","level":"info","message":"Webhook event processed successfully:","timestamp":"2024-11-19T02:09:05.819Z","transactionId":"66672ee1-3b5c-4df0-89dc-f23998303b1d","type":"payment.cancelled"}
+{"eventId":"3224380c-338a-47e2-adf3-e523220fb857","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":9},"taskId":"726f8dde-7120-4a0f-8d01-9ae6ee0ad33c","timestamp":"2024-11-19T02:09:05.819Z"}
+{"amount":399.99,"level":"info","message":"Transaction created:","timestamp":"2024-11-19T02:09:08.344Z","transactionId":"0fdd305b-415c-4990-ad2f-9335f157104c","userId":"user123"}
+{"amount":399.99,"level":"info","message":"Payment initiated:","timestamp":"2024-11-19T02:09:08.344Z","transactionId":"0fdd305b-415c-4990-ad2f-9335f157104c","userId":"user123"}
+{"eventId":"036f8a1f-ce7f-4fe6-a15b-a0cb1df547e7","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":1,"pending":0,"total":9},"timestamp":"2024-11-19T02:09:09.356Z"}
+{"eventId":"036f8a1f-ce7f-4fe6-a15b-a0cb1df547e7","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:09:09.357Z","type":"payment.created"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":10},"timestamp":"2024-11-19T02:09:09.358Z"}
+{"eventId":"036f8a1f-ce7f-4fe6-a15b-a0cb1df547e7","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:09:09.359Z","transactionId":"0fdd305b-415c-4990-ad2f-9335f157104c","type":"payment.created"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_pending","oldStatus":"payment_pending","timestamp":"2024-11-19T02:09:09.360Z","transactionId":"0fdd305b-415c-4990-ad2f-9335f157104c"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":10},"timestamp":"2024-11-19T02:09:09.360Z"}
+{"attempt":1,"level":"info","message":"Transaction status updated successfully","newStatus":"payment_pending","timestamp":"2024-11-19T02:09:09.361Z","transactionId":"0fdd305b-415c-4990-ad2f-9335f157104c"}
+{"eventId":"036f8a1f-ce7f-4fe6-a15b-a0cb1df547e7","level":"info","message":"Payment creation processed","timestamp":"2024-11-19T02:09:09.361Z","transactionId":"0fdd305b-415c-4990-ad2f-9335f157104c"}
+{"eventId":"036f8a1f-ce7f-4fe6-a15b-a0cb1df547e7","level":"info","message":"Webhook event processed successfully:","timestamp":"2024-11-19T02:09:09.362Z","transactionId":"0fdd305b-415c-4990-ad2f-9335f157104c","type":"payment.created"}
+{"eventId":"036f8a1f-ce7f-4fe6-a15b-a0cb1df547e7","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":10},"taskId":"04344fdd-f518-4688-8f0a-e55052a3f22a","timestamp":"2024-11-19T02:09:09.362Z"}
+{"eventId":"ee63b504-3ec7-400a-bbb0-fc617dcc822b","level":"info","message":"Task added to queue:","queueStats":{"active":0,"isActive":false,"maxConcurrency":1,"pending":0,"total":10},"timestamp":"2024-11-19T02:09:14.380Z"}
+{"eventId":"ee63b504-3ec7-400a-bbb0-fc617dcc822b","level":"info","message":"Webhook event queued for processing","timestamp":"2024-11-19T02:09:14.381Z","type":"payment.expired"}
+{"level":"debug","message":"Task queued","stats":{"active":0,"pending":1,"total":11},"timestamp":"2024-11-19T02:09:14.382Z"}
+{"eventId":"ee63b504-3ec7-400a-bbb0-fc617dcc822b","level":"info","message":"Processing webhook event:","timestamp":"2024-11-19T02:09:14.382Z","transactionId":"0fdd305b-415c-4990-ad2f-9335f157104c","type":"payment.expired"}
+{"level":"info","message":"Transaction status updated:","newStatus":"payment_expired","oldStatus":"payment_pending","timestamp":"2024-11-19T02:09:14.383Z","transactionId":"0fdd305b-415c-4990-ad2f-9335f157104c"}
+{"level":"debug","message":"Task started","stats":{"active":1,"pending":1,"total":11},"timestamp":"2024-11-19T02:09:14.383Z"}
+{"attempt":1,"level":"info","message":"Transaction status updated successfully","newStatus":"payment_expired","timestamp":"2024-11-19T02:09:14.383Z","transactionId":"0fdd305b-415c-4990-ad2f-9335f157104c"}
+{"eventId":"ee63b504-3ec7-400a-bbb0-fc617dcc822b","level":"info","message":"Payment expiration processed","timestamp":"2024-11-19T02:09:14.383Z","transactionId":"0fdd305b-415c-4990-ad2f-9335f157104c"}
+{"eventId":"ee63b504-3ec7-400a-bbb0-fc617dcc822b","level":"info","message":"Webhook event processed successfully:","timestamp":"2024-11-19T02:09:14.383Z","transactionId":"0fdd305b-415c-4990-ad2f-9335f157104c","type":"payment.expired"}
+{"eventId":"ee63b504-3ec7-400a-bbb0-fc617dcc822b","level":"info","message":"Task completed successfully:","stats":{"active":0,"pending":0,"total":11},"taskId":"95bb4800-c1dc-4a92-a69d-1cf9ee4a37d3","timestamp":"2024-11-19T02:09:14.384Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-19T02:11:26.813Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-19T02:11:26.817Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-19T02:12:23.718Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-19T02:12:23.721Z"}
