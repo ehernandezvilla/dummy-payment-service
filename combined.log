@@ -19,3 +19,14 @@
 {"amount":1000,"level":"info","message":"Payment initiated:","timestamp":"2024-11-13T17:43:30.609Z","transactionId":"3ad5bc9c-66d4-4018-9472-28600cd22dbb","userId":"user_123"}
 {"expectedSignature":"f210b24b922a2b78d4e88bb80aa82a4cf9c8a8852c286e3cfb437ab514d90d3e","level":"warn","message":"Invalid webhook signature","receivedSignature":"0a5c117e73509b2163d816b2345adf2bb61bf0bd3c97aa3aea80da1c67eefb5c","timestamp":"2024-11-13T17:43:47.856Z"}
 {"expectedSignature":"77a8eb27ebd74329aea13563d48b1d10931c33d6d88b52c9c6a0beec95dc024e","level":"warn","message":"Invalid webhook signature","receivedSignature":"0a5c117e73509b2163d816b2345adf2bb61bf0bd3c97aa3aea80da1c67eefb5c","timestamp":"2024-11-13T17:43:59.194Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-19T01:50:38.550Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-19T01:50:38.552Z"}
+{"level":"warn","message":"Webhook signature missing","timestamp":"2024-11-19T01:51:02.851Z"}
+{"level":"warn","message":"Webhook signature missing","timestamp":"2024-11-19T01:51:05.147Z"}
+{"level":"warn","message":"Webhook signature missing","timestamp":"2024-11-19T01:51:23.948Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-19T01:56:08.165Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-19T01:56:08.169Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-19T01:56:17.767Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-19T01:56:17.771Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-11-19T01:56:26.502Z"}
+{"level":"info","message":"Swagger documentation available at http://localhost:3000/api-docs","timestamp":"2024-11-19T01:56:26.504Z"}

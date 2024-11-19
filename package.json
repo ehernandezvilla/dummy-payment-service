@@ -13,6 +13,7 @@
   "description": "",
   "dependencies": {
     "@types/better-queue": "^3.8.6",
+    "axios": "^1.7.7",
     "better-queue": "^3.8.12",
     "crypto": "^1.0.1",
     "dotenv": "^16.4.5",
