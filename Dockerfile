@@ -3,8 +3,10 @@ FROM node:18-alpine AS builder
 
 WORKDIR /app
 
-# Instalar dependencias de desarrollo
+# Instalar dependencias
 COPY package*.json ./
+
+# Instalar todas las dependencias, incluyendo devDependencies
 RUN npm install
 
 # Copiar archivos de configuración
@@ -13,10 +15,8 @@ COPY tsconfig.json ./
 # Copiar el código fuente
 COPY src/ ./src/
 
-# Verificar la estructura y compilar TypeScript
-RUN ls -la && \
-    echo "Compiling TypeScript..." && \
-    npm run build
+# Limpiar y compilar
+RUN npm run build:clean
 
 # Etapa de producción
 FROM node:18-alpine AS production
@@ -43,7 +43,7 @@ CMD ["npm", "start"]
 # Etapa de desarrollo
 FROM builder AS development
 
-# Instalar nodemon globalmente para desarrollo
+# Instalar nodemon para desarrollo
 RUN npm install -g ts-node-dev
 
 # Comando para desarrollo con hot-reload
