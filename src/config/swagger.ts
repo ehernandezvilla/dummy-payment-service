@@ -24,8 +24,8 @@ All webhook notifications are signed using HMAC-SHA256. Verify signatures using 
       `,
       contact: {
         name: 'API Support',
-        email: 'support@example.com',
-        url: 'https://example.com/support'
+        email: 'eduardo.hvilla@gmail.com',
+        url: 'https://github.com/ehernandezvilla'
       },
       license: {
         name: 'MIT',
