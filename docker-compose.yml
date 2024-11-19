@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  payment-gateway:
+    build:
+      context: .
+      target: builder # Usamos la etapa de builder para desarrollo
+    container_name: payment-gateway
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+      - WEBHOOK_SECRET=local-webhook-secret-key
+      - API_KEY=local-api-key-123
+      - QUEUE_CONCURRENCY=2
+      - LOG_LEVEL=debug
+    volumes:
+      - .:/app # Para desarrollo, montamos el código fuente
+      - /app/node_modules # Evitamos montar los node_modules locales
+    command: npm run dev # Usar ts-node-dev para desarrollo
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    networks:
+      - payment-network
+
+networks:
+  payment-network:
+    name: payment-network
